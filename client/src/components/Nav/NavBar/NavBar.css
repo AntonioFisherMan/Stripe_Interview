@@ -1,0 +1,45 @@
+ .navbar a,
+ .navbar p {
+     font-weight: 600;
+     font-size: 12px;
+     line-height: 15px;
+     display: flex;
+     align-items: center;
+     text-align: center;
+     letter-spacing: 1.5px;
+     text-transform: uppercase;
+     color: #111111;
+     white-space: nowrap;
+ }
+ 
+ .navbar {
+     padding: 0px !important;
+     width: 100%;
+  
+ }
+ 
+ .navbar-nav li {
+     margin: 15px 15px;
+ }
+ 
+ #navbar-toggler {
+     background: #E77E83;
+     border-radius: 10%;
+ }
+ 
+ .fa-bars {
+     color: white;
+ }
+ 
+ .nav__cart,
+ .nav__search,
+ .nav__account,
+ .nav__logo {
+     display: flex;
+     align-items: center;
+ }
+ 
+ .nav__cart img,
+ .nav__search img {
+     margin-right: 10px;
+ }

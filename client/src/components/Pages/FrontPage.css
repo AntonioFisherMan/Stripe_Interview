@@ -1,0 +1,16 @@
+.goodsItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    background: white;
+    padding:10px 10px;
+}
+.goodsItem img{
+    width: 300px;
+    height: 300px;
+}
+.goodsItemPrice{
+    margin: 10px 0px 10px 0px;
+}
