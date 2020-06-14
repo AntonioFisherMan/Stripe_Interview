@@ -6,7 +6,7 @@ import {SuccessErrorsData} from '../../hoc/SuccessErrorsData'
 import { Link } from 'react-router-dom'
 import { RemoveSuccessOrder,MakeAuthStripeRequest } from '../../redux/StripeReducer'
 import ErrorMessage from '../common/ServerResponses/ErrorMessage'
-import compose from 'react-redux' 
+import {compose} from 'react-redux' 
 
 
 const FrontPage = (props) => {
