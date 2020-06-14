@@ -6,16 +6,13 @@ const keys=require("./config/keys")
 require("dotenv").config();
 
 const app = new express();
-//BODY-PARSER Middleware
-
 app.use(express.static(path.join(__dirname, "public")));
 app.use(cors());
 app.use(express.json());
 
 const db = keys.mongoURI;
 
-mongoose
-  .connect(db, {
+mongoose.connect(db,{
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useFindAndModify: false,

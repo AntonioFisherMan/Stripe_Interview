@@ -103,7 +103,6 @@ router.post("/stripe",  (req, res) => {
 });
 router.post("/deauthorize",  (req, res) => {
   try {
-    console.log(req.body)
     stripe.oauth.deauthorize({
       client_id: req.body.clientId,
       stripe_user_id: req.body.stripeId,
