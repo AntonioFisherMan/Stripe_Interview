@@ -18,7 +18,7 @@ const AuthStripe = (props) => {
         <div className="container">
             <div className="row">
                 <div className="col-12 d-flex justify-content-center">
-    {props.errors&&props.errors.id === 'STRIPE_AUTH_FAIL' ? <div><ErrorMessage message={props.errors.message}/> <Link to="/account">Connect</Link></div>:<p>Hello User <span style={{color:"pink",fontWeight:"bold"}}>{props.stripeUserId}</span></p>}
+    {props.errors&&props.errors.id === 'STRIPE_AUTH_FAIL' ? <div className="d-flex justify-content-center align-items-center"><ErrorMessage message={props.errors.message}/> <Link to="/account">Connect</Link></div>:<p>Hello User <span style={{color:"pink",fontWeight:"bold"}}>{props.stripeUserId}</span></p>}
                 </div>
             </div>
         </div>
