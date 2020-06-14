@@ -60,7 +60,6 @@ export const GetRequestStripe=()=>dispatch=>{
 }
 export const MakeAuthStripeRequest=(code)=>dispatch=>{
     testAPI.makeAuthStripeRequest(code).then(res=>{
-
     dispatch(SetStripeUserId(res.data.item.stripe_user_id))
     }).catch(err=>{
         if(err.response.data.message.raw.response)dispatch(returnErrors(err.response.data.message.raw.response.error.message,err.response.data.message.type,"STRIPE_AUTH_FAIL"))  

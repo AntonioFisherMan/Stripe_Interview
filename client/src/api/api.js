@@ -17,7 +17,6 @@ export const testAPI = {
     return axios.post(baseUrl+"payment",{data})
   },
   makeAuthStripeRequest(code){
-    debugger
     return axios.post(baseUrl+"auth/stripe",{code})
   },
   getProductsRequest(){
@@ -30,7 +29,7 @@ export const testAPI = {
     return axios.get(`https://connect.stripe.com/oauth/authorize`,config)
   },
   stripeDeauthorize(stripeId,clientId){
-    debugger
+    console.log(stripeId)
     return axios.post(baseUrl+'auth/deauthorize',{stripeId,clientId})
   }
 

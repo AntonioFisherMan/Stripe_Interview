@@ -14,7 +14,7 @@ const Account = (props) => {
         <div className="container">
             <div className="row ">
                 <div className="col-12 d-flex justify-content-center">
-                    {props.stripeUserId?<p>Hello user <span style={{color:"pink",fontWeight:"bold"}}>{props.stripeUserId}</span></p>: <a href="https://connect.stripe.com/oauth/authorize?response_type=code&client_id=ca_HRRy5LDYgjjaJEOMX72ZW8Pm36cKmsN2&scope=read_write&redirect_uri=https://interview-stripe.herokuapp.com/auth" onClick={()=>getRequestStripe()} className="stripe-connect"><span style={{paddingBottom:"20px"}}>Connect with Stripe</span></a>}
+                    {props.stripeUserId?<p>Hello user <span style={{color:"pink",fontWeight:"bold"}}>{props.stripeUserId}</span></p>: <a href="https://connect.stripe.com/oauth/authorize?response_type=code&client_id=ca_HRRy5LDYgjjaJEOMX72ZW8Pm36cKmsN2&scope=read_write&redirect_uri=https://interview-stripe.herokuapp.com/auth" onClick={()=>getRequestStripe()} className="stripe-connect"><span >Connect with Stripe</span></a>}
                 </div>
             </div>
         </div>

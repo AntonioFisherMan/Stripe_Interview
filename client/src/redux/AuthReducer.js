@@ -95,7 +95,6 @@ import {ClearStripeUserId} from './StripeReducer'
   
   export const logout = () => (dispatch,getState) => {
     dispatch({ type: LOGOUT_SUCCESS });
-    dispatch(ClearStripeUserId())
     testAPI.stripeDeauthorize(getState().stripe.stripeUserId,"ca_HRRy5LDYgjjaJEOMX72ZW8Pm36cKmsN2").then(res=>{
       dispatch(ClearStripeUserId())
     }).catch(err=>{
