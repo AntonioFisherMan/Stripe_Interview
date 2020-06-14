@@ -3,7 +3,6 @@ const bcrypt = require("bcryptjs");
 const keys = require("../config/keys");
 const jwt = require("jsonwebtoken");
 const stripe=require('stripe')(keys.stripeSecretKey)
-console.log(keys.stripeSecretKey)
 let User = require("../models/user.model");
 
 router.post("/", (req, res) => {
